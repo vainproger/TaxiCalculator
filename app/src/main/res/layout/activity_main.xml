@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:transitionName="mainSlide"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/fromWhereInput"
+        android:layout_width="305dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/from_where"
+        android:inputType="textMultiLine"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        app:barrierAllowsGoneWidgets="false"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="215dp"
+        android:onClick="onClickAction"
+        android:text="@string/send_action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromWhereInput"
+        tools:ignore="UsingOnClickInXml" />
+
+    <include
+        layout="@layout/header_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_main_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

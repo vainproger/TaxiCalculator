@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PracticeProject</string>
+    <string name="from_where">Откуда</string>
+    <string name="to_where">Куда</string>
+    <string name="send_action">Отправить</string>
+    <string name="order_action">Заказать</string>
+    <string name="back_action">Назад</string>
+    <string name="driver_name">Водитель</string>
+    <string name="price_name">Цена заказа</string>
+    <string name="time_name">Время поездки</string>
+    <string name="taxiClass_name">Класс такси</string>
+    <string name="max_price_name">МАКС СТОИМОСТЬ</string>
+    <string name="all_variants_name">ВСЕ ВАРИАНТЫ</string>
+    <string name="min_price_name">МИН СТОИМОСТЬ</string>
+</resources>
